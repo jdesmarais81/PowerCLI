@@ -10,6 +10,9 @@ Usage:        powershell -ExecutionPolicy Bypass -File ./vmware_unmap_datastore.
 Purpose:      Dumps Datastore (in GB): Capacity, Free, and Uncommitted space to
               to CSV and runs ESXCli command 'unmap' to retrieve unused space
               on Thin Provisioned LUNs.
+JD Comment:   This Script allows you to scan all datastores in a vCenter using any
+              host.  Which is fine for most but it will scan remote hosts as well
+              that are attached to the vCenter.
 
 Requirements: Windows Powershell and VI Toolkit
 
@@ -19,6 +22,7 @@ TO DO:        Import Dell Equal Logic Module, get Used space before/after unmap
 
 Created By:   lars.bjerke@augustschell.com
 History:      06/20/2014  -  Created
+              03/29/2017  -  Forked by JD
 ###############################################################################
 "@
 
