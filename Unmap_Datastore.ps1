@@ -14,11 +14,16 @@ Set-PowerCLIConfiguration -Scope Session -WebOperationTimeoutSeconds -1 -Confirm
 # End Set Session Timout
 
 # Start Global Definitions
-$VIServer = "yourvCenter.lan.local"
-$UNMAPs = @(	("esx0019.*", "DS01*"),
-                ("esx0017.*", "DS02*"),
-                ("esx0003.*", "DS03*"))
+# Only Change These Settings! 
+# Note: the last host/datastore CANNOT have a , at the end 
+$VIServer = "YourvCenter.lan.local"
+$UNMAPs = @(	("esx001.*", "DS01*"),
+                ("esx002.*", "DS02*"),
+                ("esx003.*", "DS03*")
+		)
 # End Global Definitions
+
+# DO NOT CHANGE ANYTHING BELOW
 
 # Start vCenter Connection
 Write-Output "Starting to Process vCenter Connection to " $VIServer " ..."
