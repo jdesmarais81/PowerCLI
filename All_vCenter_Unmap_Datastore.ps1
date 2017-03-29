@@ -13,6 +13,8 @@ Purpose:      Dumps Datastore (in GB): Capacity, Free, and Uncommitted space to
 JD Comment:   This Script allows you to scan all datastores in a vCenter using any
               host.  Which is fine for most but it will scan remote hosts as well
               that are attached to the vCenter.
+              Note:  this has also been found to have errors on some version that 
+              I do not know which. 
 
 Requirements: Windows Powershell and VI Toolkit
 
